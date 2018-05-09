@@ -1,0 +1,42 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/",
+    "lint-fix": "./node_modules/.bin/eslint --fix src/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/node": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "del": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-filter": "^5.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-remember": "^1.0.1",
+    "nodemon": "^1.17.4",
+    "streamqueue": "^1.1.2"
+  },
+  "dependencies": {
+    "async-local-storage": "^1.2.0",
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "ofa2": "file:../ofa2",
+    "ofa2-config": "file:../ofa2-config",
+    "ofa2-controller": "file:../ofa2-controller",
+    "ofa2-koa": "file:../ofa2-koa",
+    "ofa2-koa-policy": "file:../ofa2-koa-policy",
+    "ofa2-koa-route": "file:../ofa2-koa-route",
+    "ofa2-koa-server": "file:../ofa2-koa-server",
+    "ofa2-logger": "file:../ofa2-logger",
+    "shortid": "^2.2.8",
+    "uuid": "^3.2.1"
+  }
+}

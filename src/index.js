@@ -1,0 +1,30 @@
+import Ofa2 from '../../ofa2';
+import config from '../../ofa2-config';
+import log from '../../ofa2-logger';
+import controller from '../../ofa2-controller';
+import koa from '../../ofa2-koa';
+import koaPolicy from '../../ofa2-koa-policy';
+import koaRoute from '../../ofa2-koa-route';
+import koaServer from '../../ofa2-koa-server';
+
+const app = new Ofa2(__dirname)
+  .use(config)
+  .use(log)
+  .use(controller)
+  .use(koa)
+  .use(koaPolicy)
+  .use(koaRoute)
+  .use(koaServer)
+  .on('lifted', () => {
+    // eslint-disable-next-line no-console
+    logger.info('lifted');
+    logger.info('config: ', app.config);
+  })
+  .on('error', (e) => {
+    // eslint-disable-next-line no-console
+    console.warn(e);
+    process.exit(1);
+  })
+  .lift();
+
+export default app;
