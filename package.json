@@ -16,6 +16,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
+    "gulp": "4.0.0",
     "gulp-cached": "^1.1.1",
     "gulp-eslint": "^4.0.2",
     "gulp-filter": "^5.1.0",
@@ -25,18 +26,18 @@
     "streamqueue": "^1.1.2"
   },
   "dependencies": {
-    "async-local-storage": "^1.2.0",
     "bluebird": "^3.5.1",
+    "file-path-one-layer": "ofa2/file-path-one-layer",
     "lodash": "^4.17.10",
-    "ofa2": "github:ofa2/ofa2",
-    "ofa2-config": "github:ofa2/ofa2-config",
-    "ofa2-controller": "github:ofa2/ofa2-controller",
-    "ofa2-koa": "github:ofa2/ofa2-koa",
-    "ofa2-koa-policy": "github:ofa2/ofa2-koa-policy",
-    "ofa2-koa-route": "github:ofa2/ofa2-koa-route",
-    "ofa2-koa-server": "github:ofa2/ofa2-koa-server",
-    "ofa2-logger": "github:ofa2/ofa2-logger",
-    "shortid": "^2.2.8",
-    "uuid": "^3.2.1"
+    "ofa2": "ofa2/ofa2",
+    "ofa2-config": "ofa2/ofa2-config",
+    "ofa2-controller": "ofa2/ofa2-controller",
+    "ofa2-error": "ofa2/ofa2-error",
+    "ofa2-koa": "ofa2/ofa2-koa",
+    "ofa2-koa-policy": "ofa2/ofa2-koa-policy",
+    "ofa2-koa-route": "ofa2/ofa2-koa-route",
+    "ofa2-koa-server": "ofa2/ofa2-koa-server",
+    "ofa2-logger": "ofa2/ofa2-logger",
+    "shortid": "^2.2.8"
   }
 }

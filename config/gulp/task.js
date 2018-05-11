@@ -10,14 +10,14 @@ const defaultNodemonEvent = {
   crash() {
     console.error('Application has crashed!\n');
     notifier.notify({
-      title: 'Application has crashed!',
+      title: 'crashed!',
       message: utilities.formatDate('hh:mm:ss'),
     });
   },
   start() {
-    utilities.spawnDefer({
-      cmd: 'clear',
-      arg: [],
+    notifier.notify({
+      title: 'restarting!',
+      message: utilities.formatDate('hh:mm:ss'),
     });
   },
 };

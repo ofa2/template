@@ -6,4 +6,9 @@ export default {
       success: true,
     };
   },
+  test() {
+    throw new Errors.UnknownError({
+      msg: 'test',
+    });
+  },
 };

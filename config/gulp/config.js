@@ -28,6 +28,9 @@ function getCommonConfig() {
         env: {
           NODE_ENV: 'development',
         },
+        // if you want use attach debug, use next config
+        args: ['--inspect=9229'],
+        // for es6+
         exec: 'babel-node',
       },
       events: {
