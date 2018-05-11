@@ -6,8 +6,10 @@ import koa from 'ofa2-koa';
 import koaPolicy from 'ofa2-koa-policy';
 import koaRoute from 'ofa2-koa-route';
 import koaServer from 'ofa2-koa-server';
+import als from 'ofa2-als';
 
 const app = new Ofa2(__dirname)
+  .use(als)
   .use(config)
   .use(log)
   .use(controller)

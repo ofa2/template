@@ -30,6 +30,7 @@
     "file-path-one-layer": "ofa2/file-path-one-layer",
     "lodash": "^4.17.10",
     "ofa2": "ofa2/ofa2",
+    "ofa2-als": "ofa2/ofa2-als",
     "ofa2-config": "ofa2/ofa2-config",
     "ofa2-controller": "ofa2/ofa2-controller",
     "ofa2-error": "ofa2/ofa2-error",

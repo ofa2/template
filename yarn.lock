@@ -3218,6 +3218,12 @@ object.reduce@^1.0.0:
     for-own "^1.0.0"
     make-iterator "^1.0.0"
 
+ofa2-als@ofa2/ofa2-als:
+  version "1.0.0"
+  resolved "https://codeload.github.com/ofa2/ofa2-als/tar.gz/11e3716f0d270342fb4ef643534053b1b00b5a0d"
+  dependencies:
+    async-local-storage "^1.2.0"
+
 ofa2-config@ofa2/ofa2-config:
   version "1.0.0"
   resolved "https://codeload.github.com/ofa2/ofa2-config/tar.gz/89e1b2c1671355155c6943b48963f264e953b754"
