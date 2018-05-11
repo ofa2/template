@@ -39,6 +39,7 @@
     "ofa2-koa-route": "ofa2/ofa2-koa-route",
     "ofa2-koa-server": "ofa2/ofa2-koa-server",
     "ofa2-logger": "ofa2/ofa2-logger",
+    "ofa2-model": "ofa2/ofa2-model",
     "shortid": "^2.2.8"
   }
 }
