@@ -8,6 +8,7 @@ import koaRoute from 'ofa2-koa-route';
 import koaServer from 'ofa2-koa-server';
 import als from 'ofa2-als';
 import model from 'ofa2-model';
+import shutdown from 'ofa2-shutdown';
 
 const app = new Ofa2(__dirname)
   .use(als)
@@ -19,6 +20,7 @@ const app = new Ofa2(__dirname)
   .use(koaPolicy)
   .use(koaRoute)
   .use(koaServer)
+  .use(shutdown)
   .on('lifted', () => {
     logger.info('lifted');
     logger.info('config: ', app.config);

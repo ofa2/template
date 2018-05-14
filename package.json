@@ -22,6 +22,7 @@
     "gulp-filter": "^5.1.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-remember": "^1.0.1",
+    "node-notifier": "^5.2.1",
     "nodemon": "^1.17.4",
     "streamqueue": "^1.1.2"
   },
@@ -40,6 +41,7 @@
     "ofa2-koa-server": "ofa2/ofa2-koa-server",
     "ofa2-logger": "ofa2/ofa2-logger",
     "ofa2-model": "ofa2/ofa2-model",
+    "ofa2-shutdown": "ofa2/ofa2-shutdown",
     "shortid": "^2.2.8"
   }
 }
