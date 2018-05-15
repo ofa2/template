@@ -4,6 +4,9 @@
 const notifier = require('node-notifier');
 const gulp = require('gulp');
 const nodemon = require('nodemon');
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+
 const utilities = require('./utilities');
 
 const defaultNodemonEvent = {
@@ -64,7 +67,6 @@ function getConfig() {
 }
 
 function setDevEnv(done) {
-  gulpConfig.alterableSetting.publicPath = 'src/public';
   getConfig();
   return done && done();
 }
@@ -126,22 +128,6 @@ gulp.task('wlint', (done) => {
   return done();
 });
 
-gulp.task('server', () => {
-  let f = $.filter(['**/*.js'], { restore: true });
-
-  return gulp
-    .src(config.server.src, config.server.opt)
-    .pipe(f)
-    .pipe($.eslint())
-    .pipe($.eslint.result((result) => {
-      utilities.eslintReporter(result);
-    }))
-    .pipe(f.restore)
-    .pipe(gulp.dest(config.server.dest));
-});
-
-gulp.task('buildServer', gulp.series('clean', 'server'));
-
 gulp.task('nodemon', (done) => {
   nodemon(config.nodemon.config);
 
@@ -165,4 +151,18 @@ gulp.task('nodemon', (done) => {
   return done();
 });
 
-gulp.task('default', gulp.series(setDevEnv, 'clean', gulp.parallel('nodemon', 'wlint')));
+gulp.task('babel', () => {
+  let f = $.filter(['**/*.js'], { restore: true });
+
+  return gulp
+    .src(config.server.src, config.server.opt)
+    .pipe(f)
+    .pipe(sourcemaps.init())
+    .pipe(babel())
+    .pipe(sourcemaps.write('.'))
+    .pipe(f.restore)
+    .pipe(gulp.dest(config.server.dest));
+});
+
+gulp.task('default', gulp.series(setDevEnv, gulp.parallel('nodemon', 'wlint')));
+gulp.task('build', gulp.series(setDevEnv, 'clean', 'lint', 'babel'));

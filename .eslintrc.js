@@ -3,6 +3,7 @@ module.exports = {
   plugins: [],
   globals: {
     _: false,
+    act: false,
     als: false,
     config: false,
     Errors: false,

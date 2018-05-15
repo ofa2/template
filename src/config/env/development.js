@@ -13,5 +13,34 @@ export default {
       ],
       database: 'mwConsoleDev',
     },
+    // for seneca-route
+    rabbitmq: {
+      transport: 'ofa2-seneca-amqp-transport',
+      options: {
+        url: 'amqp://127.0.0.1',
+        username: undefined,
+        password: undefined,
+
+        type: 'amqp',
+        pin: 'role:template',
+        consume: {
+          noAck: true,
+        },
+      },
+    },
+    senecaClient: {
+      transport: 'ofa2-seneca-amqp-transport',
+      options: {
+        url: 'amqp://127.0.0.1',
+        username: undefined,
+        password: undefined,
+
+        type: 'amqp',
+        pin: ['role:template', 'role:console'],
+        consume: {
+          noAck: true,
+        },
+      },
+    },
   },
 };

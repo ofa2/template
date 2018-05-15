@@ -17,11 +17,13 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
     "gulp": "4.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
     "gulp-cached": "^1.1.1",
     "gulp-eslint": "^4.0.2",
     "gulp-filter": "^5.1.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-remember": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.4",
     "node-notifier": "^5.2.1",
     "nodemon": "^1.17.4",
     "streamqueue": "^1.1.2"
@@ -41,6 +43,11 @@
     "ofa2-koa-server": "ofa2/ofa2-koa-server",
     "ofa2-logger": "ofa2/ofa2-logger",
     "ofa2-model": "ofa2/ofa2-model",
+    "ofa2-seneca": "ofa2/ofa2-seneca",
+    "ofa2-seneca-amqp-transport": "ofa2/ofa2-seneca-amqp-transport",
+    "ofa2-seneca-client": "ofa2/ofa2-seneca-client",
+    "ofa2-seneca-route": "ofa2/ofa2-seneca-route",
+    "ofa2-seneca-wrap": "ofa2/ofa2-seneca-wrap",
     "ofa2-shutdown": "ofa2/ofa2-shutdown",
     "shortid": "^2.2.8"
   }

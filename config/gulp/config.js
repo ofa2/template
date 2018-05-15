@@ -2,7 +2,6 @@
 let alterableSetting = {
   // prod 的 基础路径
   basePath: 'dist/',
-  publicPath: 'dist/public/',
   viewPath: 'dist/views/',
 };
 
@@ -13,7 +12,7 @@ function getCommonConfig() {
       src: [`${alterableSetting.basePath}**/*`],
     },
     server: {
-      src: ['**/*', '!public/**/*', '!views/**/*', '!index.html'],
+      src: ['**/*', '!views/**/*'],
       opt: {
         cwd: 'src/',
         base: 'src/',
@@ -28,8 +27,8 @@ function getCommonConfig() {
         env: {
           NODE_ENV: 'development',
         },
-        // if you want use attach debug, use next config
-        args: ['--inspect=9229'],
+        // if you want use attach debug, use `INSPECT=9229 gulp`
+        args: process.env.INSPECT ? [`--inspect=${process.env.INSPECT}`] : '',
         // for es6+
         exec: 'babel-node',
       },
