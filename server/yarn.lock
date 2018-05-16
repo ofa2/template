@@ -552,6 +552,128 @@
     normalize-path "^2.0.1"
     through2 "^2.0.3"
 
+"@ofa2/file-path-one-layer@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/@ofa2/file-path-one-layer/-/file-path-one-layer-1.0.5.tgz#77293bf5ff1edec8af10e5301957ba06f2d303fc"
+  dependencies:
+    bluebird "^3.5.1"
+    fs-extra "^6.0.0"
+
+"@ofa2/ofa2-als@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-als/-/ofa2-als-1.0.2.tgz#2dc0ee9a65bc547cb1af6af33520d9a849583584"
+  dependencies:
+    async-local-storage "^1.2.0"
+
+"@ofa2/ofa2-config@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-config/-/ofa2-config-1.0.2.tgz#38ff6b568a978dd642104ba5223778b8648ec554"
+  dependencies:
+    "@ofa2/file-path-one-layer" "^1.0.5"
+    lodash "^4.17.10"
+
+"@ofa2/ofa2-controller@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-controller/-/ofa2-controller-1.0.2.tgz#dff0cc70faba648e0011fe989d63799e3096d088"
+  dependencies:
+    "@ofa2/file-path-one-layer" "^1.0.5"
+
+"@ofa2/ofa2-error@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-error/-/ofa2-error-1.0.2.tgz#ed004f1640cfde9fe6d0fe217ee3bd46048083aa"
+
+"@ofa2/ofa2-koa-policy@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-koa-policy/-/ofa2-koa-policy-1.0.2.tgz#4f017088b1bf1295c3b07d782a49560793bb14ed"
+  dependencies:
+    "@ofa2/file-path-one-layer" "^1.0.5"
+    lodash "^4.17.10"
+
+"@ofa2/ofa2-koa-route@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-koa-route/-/ofa2-koa-route-1.0.1.tgz#da87fcbb65e2bccdbce9a4c1800f8d8eb0449c0a"
+  dependencies:
+    koa-body "^2.5.0"
+    koa-router "^7.4.0"
+    lodash "^4.17.10"
+
+"@ofa2/ofa2-koa-server@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-koa-server/-/ofa2-koa-server-1.0.1.tgz#7c61f582baa94bc28f4e7b261a1f9a1826eac38f"
+
+"@ofa2/ofa2-koa@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-koa/-/ofa2-koa-1.0.2.tgz#478d80001057fbc9fc5cc4798110c43b0f710034"
+  dependencies:
+    koa "^2.5.1"
+
+"@ofa2/ofa2-logger@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-logger/-/ofa2-logger-1.0.1.tgz#484d1c46583de16b3713b9d80f7f8c57ab4c92cb"
+  dependencies:
+    lodash "^4.17.10"
+    pino "^4.16.1"
+
+"@ofa2/ofa2-model@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-model/-/ofa2-model-1.0.1.tgz#ea449b882087d6f9f78dbad0950a557bf69425ea"
+  dependencies:
+    bluebird "^3.5.1"
+    lodash "^4.17.10"
+    mongodb-uri "^0.9.7"
+    mongoose "^5.1.0"
+
+"@ofa2/ofa2-seneca-amqp-transport@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-seneca-amqp-transport/-/ofa2-seneca-amqp-transport-1.0.1.tgz#737c8fc84fd3d3632aaf6e819c04fe4966791b14"
+  dependencies:
+    amqplib "^0.4.1"
+    async "^1.5.2"
+    jsonic "^0.2.2"
+    lodash "^4.6.1"
+    seneca "^1.3.0"
+    shortid "^2.2.4"
+    when "^3.7.7"
+
+"@ofa2/ofa2-seneca-client@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-seneca-client/-/ofa2-seneca-client-1.0.1.tgz#2dbcc0a74271f2a628f7e5553ce9ec42f3ca2b50"
+  dependencies:
+    bluebird "^3.5.1"
+    lodash "^4.17.10"
+
+"@ofa2/ofa2-seneca-route@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-seneca-route/-/ofa2-seneca-route-1.0.1.tgz#7a35d8319c504598a7d160fd7bbc506fb0e280e4"
+  dependencies:
+    bluebird "^3.5.1"
+    lodash "^4.17.10"
+
+"@ofa2/ofa2-seneca-wrap@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-seneca-wrap/-/ofa2-seneca-wrap-1.0.1.tgz#b72396fc4a764ce5a9e1eadaa2ac73a878a3660d"
+  dependencies:
+    bluebird "^3.5.1"
+    lodash "^4.17.10"
+
+"@ofa2/ofa2-seneca@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-seneca/-/ofa2-seneca-1.0.2.tgz#10caced2e08d49949c58f0a05f105a1a1f803e9a"
+  dependencies:
+    bluebird "^3.5.1"
+    seneca "^3.4.3"
+
+"@ofa2/ofa2-shutdown@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-shutdown/-/ofa2-shutdown-1.0.1.tgz#e10c8120a5823d7c4a0162fca3b2e1b3651e070f"
+
+"@ofa2/ofa2@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2/-/ofa2-1.0.3.tgz#8a1fce96d96587aa2760ca3387f3aa9c2a25fbf9"
+  dependencies:
+    bluebird "^3.5.1"
+    lodash "^4.17.10"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1033,8 +1155,8 @@ camelcase@^4.0.0:
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-lite@^1.0.30000835:
-  version "1.0.30000840"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000840.tgz#344513f8f843536cf99694964c09811277eee395"
+  version "1.0.30000841"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000841.tgz#200079f853ca2839cb80852348d09a551f92f70a"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -1143,7 +1265,7 @@ cloneable-readable@^1.0.0:
     process-nextick-args "^2.0.0"
     readable-stream "^2.3.5"
 
-co-body@^5.1.0:
+co-body@^5.1.1:
   version "5.2.0"
   resolved "https://registry.npmjs.org/co-body/-/co-body-5.2.0.tgz#5a0a658c46029131e0e3a306f67647302f71c124"
   dependencies:
@@ -1271,10 +1393,6 @@ copy-props@^2.0.1:
   dependencies:
     each-props "^1.3.0"
     is-plain-object "^2.0.1"
-
-copy-to@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/copy-to/-/copy-to-2.0.1.tgz#2680fbb8068a48d08656b6098092bdafc906f4a5"
 
 core-js@^2.5.3:
   version "2.5.6"
@@ -1500,8 +1618,8 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.45:
-  version "1.3.45"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.45.tgz#458ac1b1c5c760ce8811a16d2bfbd97ec30bafb8"
+  version "1.3.46"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.46.tgz#00e85e22275415a887505e4ab49737194f18b9b0"
 
 end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.1"
@@ -1857,14 +1975,6 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
-"file-path-one-layer@github:ofa2/file-path-one-layer", file-path-one-layer@ofa2/file-path-one-layer:
-  version "1.0.0"
-  uid "0d79fa9f7a3824ab80e522cd37d250a8acc85a12"
-  resolved "https://codeload.github.com/ofa2/file-path-one-layer/tar.gz/0d79fa9f7a3824ab80e522cd37d250a8acc85a12"
-  dependencies:
-    bluebird "^3.5.1"
-    fs-extra "^6.0.0"
-
 filename-regex@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/filename-regex/-/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
@@ -1990,6 +2100,10 @@ foreach@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
 
+formidable@^1.1.1:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/formidable/-/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
+
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npmjs.org/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -2042,11 +2156,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 fsevents@^1.1.2:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-1.2.3.tgz#08292982e7059f6674c93d8b829c1e8604979ac0"
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-1.2.4.tgz#f41dcb1af2582af3692da36fc55cbd8e1041c426"
   dependencies:
     nan "^2.9.2"
-    node-pre-gyp "^0.9.0"
+    node-pre-gyp "^0.10.0"
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -2945,12 +3059,12 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-koa-bodyparser@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/koa-bodyparser/-/koa-bodyparser-4.2.0.tgz#bce6e08bc65f8709b6d1faa9411c7f0d8938aa54"
+koa-body@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/koa-body/-/koa-body-2.5.0.tgz#84e8fcd8d5229a8cc1cb98a926e939069e716915"
   dependencies:
-    co-body "^5.1.0"
-    copy-to "^2.0.1"
+    co-body "^5.1.1"
+    formidable "^1.1.1"
 
 koa-compose@^3.0.0:
   version "3.2.1"
@@ -3486,9 +3600,9 @@ node-notifier@^5.2.1:
     shellwords "^0.1.1"
     which "^1.3.0"
 
-node-pre-gyp@^0.9.0:
-  version "0.9.1"
-  resolved "https://registry.npmjs.org/node-pre-gyp/-/node-pre-gyp-0.9.1.tgz#f11c07516dd92f87199dbc7e1838eab7cd56c9e0"
+node-pre-gyp@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/node-pre-gyp/-/node-pre-gyp-0.10.0.tgz#6e4ef5bb5c5203c6552448828c852c40111aac46"
   dependencies:
     detect-libc "^1.0.2"
     mkdirp "^0.5.1"
@@ -3660,121 +3774,6 @@ object.reduce@^1.0.0:
   dependencies:
     for-own "^1.0.0"
     make-iterator "^1.0.0"
-
-ofa2-als@ofa2/ofa2-als:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-als/tar.gz/11e3716f0d270342fb4ef643534053b1b00b5a0d"
-  dependencies:
-    async-local-storage "^1.2.0"
-
-ofa2-config@ofa2/ofa2-config:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-config/tar.gz/89e1b2c1671355155c6943b48963f264e953b754"
-  dependencies:
-    file-path-one-layer "github:ofa2/file-path-one-layer"
-    lodash "^4.17.10"
-
-ofa2-controller@ofa2/ofa2-controller:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-controller/tar.gz/87f579d6c080fc8b66916a5cb91d5e0c3885e051"
-  dependencies:
-    file-path-one-layer "github:ofa2/file-path-one-layer"
-
-ofa2-error@ofa2/ofa2-error:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-error/tar.gz/2a41e79213e3f707ef1e7b26efb6026ee2b82823"
-
-ofa2-koa-policy@ofa2/ofa2-koa-policy:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-koa-policy/tar.gz/ac01aa308cb641efb41fb3f2f197bda2a6bc12b8"
-  dependencies:
-    file-path-one-layer "github:ofa2/file-path-one-layer"
-    lodash "^4.17.10"
-
-ofa2-koa-route@ofa2/ofa2-koa-route:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-koa-route/tar.gz/d7353b7b4625e56b6edab4901a5c03625b49f5d3"
-  dependencies:
-    koa-bodyparser "^4.2.0"
-    koa-router "^7.4.0"
-    lodash "^4.17.10"
-
-ofa2-koa-server@ofa2/ofa2-koa-server:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-koa-server/tar.gz/49dcb59145fb0021f90734bea1ffe4fb9d276496"
-
-ofa2-koa@ofa2/ofa2-koa:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-koa/tar.gz/33baf84987ac7cbd7196298cff8d1980a102f56e"
-  dependencies:
-    koa "^2.5.1"
-
-ofa2-logger@ofa2/ofa2-logger:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-logger/tar.gz/3e89957c6adbc9c99ddcee16f8e44931717c9fd9"
-  dependencies:
-    lodash "^4.17.10"
-    pino "^4.16.1"
-
-ofa2-model@ofa2/ofa2-model:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-model/tar.gz/46d0f5fd02fb374cea268ce70c96503196dbf38f"
-  dependencies:
-    bluebird "^3.5.1"
-    lodash "^4.17.10"
-    mongodb-uri "^0.9.7"
-    mongoose "^5.1.0"
-
-ofa2-seneca-amqp-transport@ofa2/ofa2-seneca-amqp-transport:
-  version "0.2.3-dev"
-  resolved "https://codeload.github.com/ofa2/ofa2-seneca-amqp-transport/tar.gz/77bada472794be4b14bc848aad5023efc05c6fea"
-  dependencies:
-    amqplib "^0.4.1"
-    async "^1.5.2"
-    jsonic "^0.2.2"
-    lodash "^4.6.1"
-    seneca "^1.3.0"
-    shortid "^2.2.4"
-    when "^3.7.7"
-
-ofa2-seneca-client@ofa2/ofa2-seneca-client:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-seneca-client/tar.gz/244b41cd68bc5f166363cd0efdc1e11ce2941824"
-  dependencies:
-    bluebird "^3.5.1"
-    lodash "^4.17.10"
-
-ofa2-seneca-route@ofa2/ofa2-seneca-route:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-seneca-route/tar.gz/35dfaaf297d1b8348463a52d9dccdedafd842dc8"
-  dependencies:
-    bluebird "^3.5.1"
-    lodash "^4.17.10"
-
-ofa2-seneca-wrap@ofa2/ofa2-seneca-wrap:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-seneca-wrap/tar.gz/62b4298de848cd2f88dd8bee46c849103c7311dd"
-  dependencies:
-    bluebird "^3.5.1"
-    lodash "^4.17.10"
-
-ofa2-seneca@ofa2/ofa2-seneca:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-seneca/tar.gz/eb6acaedfc50c86669e894f60fc57b670caa54c8"
-  dependencies:
-    bluebird "^3.5.1"
-    seneca "^3.4.3"
-
-ofa2-shutdown@ofa2/ofa2-shutdown:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2-shutdown/tar.gz/6b64f38a304d37c0158048ea47753382476923c5"
-
-ofa2@ofa2/ofa2:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ofa2/ofa2/tar.gz/7859f9d762a502d4d60e79f12771bda8003f8b0e"
-  dependencies:
-    bluebird "^3.5.1"
-    lodash "^4.17.10"
 
 on-finished@^2.1.0, on-finished@~2.3.0:
   version "2.3.0"
@@ -5253,8 +5252,8 @@ unzip-response@^2.0.1:
   resolved "https://registry.npmjs.org/unzip-response/-/unzip-response-2.0.1.tgz#d2f0f737d16b0615e72a6935ed04214572d56f97"
 
 upath@^1.0.0:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/upath/-/upath-1.0.5.tgz#02cab9ecebe95bbec6d5fc2566325725ab6d1a73"
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/upath/-/upath-1.1.0.tgz#35256597e46a581db4793d0ce47fa9aebfc9fabd"
 
 update-notifier@^2.3.0:
   version "2.5.0"

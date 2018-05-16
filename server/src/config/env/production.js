@@ -1,7 +1,7 @@
 export default {
   log: {
-    level: 'trace',
-    base: null,
+    // level: 'trace',
+    // base: null,
   },
   connections: {
     mongo: {
