@@ -667,9 +667,9 @@
   version "1.0.1"
   resolved "https://registry.npmjs.org/@ofa2/ofa2-shutdown/-/ofa2-shutdown-1.0.1.tgz#e10c8120a5823d7c4a0162fca3b2e1b3651e070f"
 
-"@ofa2/ofa2@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/@ofa2/ofa2/-/ofa2-1.0.3.tgz#8a1fce96d96587aa2760ca3387f3aa9c2a25fbf9"
+"@ofa2/ofa2@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2/-/ofa2-1.0.4.tgz#7202c22775511fc7c92430702fc2782eac12899f"
   dependencies:
     bluebird "^3.5.1"
     lodash "^4.17.10"

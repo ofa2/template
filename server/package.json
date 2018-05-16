@@ -30,7 +30,7 @@
     "streamqueue": "^1.1.2"
   },
   "dependencies": {
-    "@ofa2/ofa2": "^1.0.3",
+    "@ofa2/ofa2": "^1.0.4",
     "@ofa2/ofa2-als": "^1.0.2",
     "@ofa2/ofa2-config": "^1.0.2",
     "@ofa2/ofa2-controller": "^1.0.2",
