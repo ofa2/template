@@ -6,6 +6,7 @@ const gulp = require('gulp');
 const nodemon = require('nodemon');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
+const replace = require('gulp-replace');
 
 const utilities = require('./utilities');
 
@@ -75,8 +76,8 @@ function validConfig(setting, name = 'src') {
   return setting[name] && setting[name].length;
 }
 
-gulp.task('clean', (done) => {
-  return $.del(config.clean.src, done);
+gulp.task('clean', () => {
+  return $.del(config.clean.src, config.clean.options);
 });
 
 gulp.task('lint', (done) => {
@@ -153,6 +154,7 @@ gulp.task('nodemon', (done) => {
 
 gulp.task('babel', () => {
   let f = $.filter(['**/*.js'], { restore: true });
+  let replaceFilter = $.filter(config.replace.src, { restore: true });
 
   return gulp
     .src(config.server.src, config.server.opt)
@@ -161,8 +163,15 @@ gulp.task('babel', () => {
     .pipe(babel())
     .pipe(sourcemaps.write('.'))
     .pipe(f.restore)
+    .pipe(replaceFilter)
+    .pipe(replace(config.replace.regexp, config.replace.newSubstr))
+    .pipe(replaceFilter.restore)
     .pipe(gulp.dest(config.server.dest));
 });
 
+gulp.task('cp', () => {
+  return gulp.src(config.cp.src, config.cp.opt).pipe(gulp.dest(config.cp.dest));
+});
+
 gulp.task('default', gulp.series(setDevEnv, gulp.parallel('nodemon', 'wlint')));
-gulp.task('build', gulp.series(setDevEnv, 'clean', 'lint', 'babel'));
+gulp.task('build:dist', gulp.series(setDevEnv, 'clean', 'lint', 'babel', 'cp'));

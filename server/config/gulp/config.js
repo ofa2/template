@@ -1,8 +1,7 @@
 /** **** start: 用户配置********** */
 let alterableSetting = {
   // prod 的 基础路径
-  basePath: 'dist/',
-  viewPath: 'dist/views/',
+  basePath: '../dist/server/',
 };
 
 function getCommonConfig() {
@@ -10,12 +9,28 @@ function getCommonConfig() {
     clean: {
       // 清除生成文件的路径
       src: [`${alterableSetting.basePath}**/*`],
+      options: {
+        force: true,
+      },
     },
     server: {
       src: ['**/*', '!views/**/*'],
       opt: {
         cwd: 'src/',
         base: 'src/',
+      },
+      dest: alterableSetting.basePath,
+    },
+    replace: {
+      src: ['index.js'],
+      regexp: '../package.json',
+      newSubstr: './package.json',
+    },
+    cp: {
+      src: ['package.json'],
+      opt: {
+        cwd: './',
+        base: './',
       },
       dest: alterableSetting.basePath,
     },
