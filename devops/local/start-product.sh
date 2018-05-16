@@ -1,0 +1,1 @@
+command=start-product options="kill_timeout=$kill_timeout" bash ./remote-call.sh
