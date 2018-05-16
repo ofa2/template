@@ -1,9 +1,3 @@
-/* eslint-disable import/first */
-// eslint-disable-next-line
-import { performance } from 'perf_hooks';
-
-let runAt = performance.now();
-
 import Ofa2 from '@ofa2/ofa2';
 import config from '@ofa2/ofa2-config';
 import log from '@ofa2/ofa2-logger';
@@ -38,7 +32,7 @@ const app = new Ofa2(__dirname)
   .use(senecaRoute)
   .use(shutdown)
   .on('lifted', () => {
-    logger.info(`${pkg.name} lifted, use ${performance.now() - runAt} ms`);
+    logger.info(`${pkg.name} lifted`);
     // logger.info('config: ', app.config);
   })
   .on('error', (e) => {

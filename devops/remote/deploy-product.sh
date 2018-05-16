@@ -48,8 +48,8 @@ if [ "$kill_timeout" == "" ]; then
   kill_timeout=600000
 fi
 
-echo NODE_ENV=${env} pm2 start ${env}-${project}/server/app.js -i 1 -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
-NODE_ENV=${env} pm2 start ${env}-${project}/server/app.js -i 1 -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
+echo NODE_ENV=${env} pm2 start ${env}-${project}/server/index.js -i 1 -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
+NODE_ENV=${env} pm2 start ${env}-${project}/server/index.js -i 1 -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
 
 sleep 5
 

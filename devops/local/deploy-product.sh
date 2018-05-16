@@ -50,11 +50,13 @@ export roomRoot=$remoteRoot/room
 
 if [ "$nobuild" != "true" ]; then
   echo NODE_ENV=$env gulp build:dist
-  cd server
+  currentDir=$(pwd)
+  cd ../../server
   NODE_ENV=$env gulp build:dist
-  cd ..
+  cd ${currentDir}
   # TODO: add client build
 fi
+
 
 ssh -p $sshport $user@$host "mkdir $remoteRoot & mkdir $roomRoot & mkdir $roomRoot/${env}-${project}"
 
