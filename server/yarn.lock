@@ -589,9 +589,9 @@
     "@ofa2/file-path-one-layer" "^1.0.5"
     lodash "^4.17.10"
 
-"@ofa2/ofa2-koa-route@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@ofa2/ofa2-koa-route/-/ofa2-koa-route-1.0.1.tgz#da87fcbb65e2bccdbce9a4c1800f8d8eb0449c0a"
+"@ofa2/ofa2-koa-route@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ofa2/ofa2-koa-route/-/ofa2-koa-route-1.0.2.tgz#990965aa2e15b7fa10333fb1b2b28c0436beb5d2"
   dependencies:
     koa-body "^2.5.0"
     koa-router "^7.4.0"
