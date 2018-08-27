@@ -1,7 +1,7 @@
 /** **** start: 用户配置********** */
 let alterableSetting = {
   // prod 的 基础路径
-  basePath: '../dist/server/',
+  basePath: './dist/',
 };
 
 function getCommonConfig() {
@@ -50,6 +50,7 @@ function getCommonConfig() {
       events: {
         crash: true,
         start: false,
+        quit: true,
       },
     },
   };

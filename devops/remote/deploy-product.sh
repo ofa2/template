@@ -1,4 +1,14 @@
 cd $roomRoot
+source ~/.bashrc
+nvm use v8.11.1
+echo node version is:
+node -v
+
+echo npm version is:
+npm -v
+
+echo pm2 version is:
+pm2 --version
 
 # install npm modules if package.json changed
 cd ${env}-${project}-stage/server
@@ -48,8 +58,8 @@ if [ "$kill_timeout" == "" ]; then
   kill_timeout=600000
 fi
 
-echo NODE_ENV=${env} pm2 start ${env}-${project}/server/index.js -i 1 -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
-NODE_ENV=${env} pm2 start ${env}-${project}/server/index.js -i 1 -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
+echo NODE_ENV=${env} pm2 start ${env}-${project}/server/index.js -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
+NODE_ENV=${env} pm2 start ${env}-${project}/server/index.js -n ${env}-${project} -l $root/log/${env}-${project}/all.log -e $root/log/${env}-${project}/err.log --kill-timeout ${kill_timeout}
 
 sleep 5
 

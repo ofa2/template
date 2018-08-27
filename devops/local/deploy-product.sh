@@ -49,10 +49,13 @@ export roomRoot=$remoteRoot/room
 # fi
 
 if [ "$nobuild" != "true" ]; then
-  echo NODE_ENV=$env gulp build:dist
   currentDir=$(pwd)
   cd ../../server
+  echo NODE_ENV=$env gulp build:dist
   NODE_ENV=$env gulp build:dist
+  rm -rf ../dist
+  mkdir ../dist
+  mv dist/ ../dist/server/
   cd ${currentDir}
   # TODO: add client build
 fi
