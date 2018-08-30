@@ -49,9 +49,12 @@ export roomRoot=$remoteRoot/migration-room
 # fi
 
 if [ "$nobuild" != "true" ]; then
-  echo NODE_ENV=$env gulp build:dist
   cd server
+  echo NODE_ENV=$env gulp build:dist
   NODE_ENV=$env gulp build:dist
+  rm -rf ../dist
+  mkdir ../dist
+  mv dist/ ../dist/server/
   cd ..
 fi
 

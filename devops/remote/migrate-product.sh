@@ -1,3 +1,12 @@
+source ~/.bashrc
+nvm use v8.11.1
+echo node version is:
+node -v
+
+echo npm version is:
+npm -v
+
+
 mkdir $root/migrations >/dev/null 2>&1
 mkdir $root/migrations/${env}-${project}/ >/dev/null 2>&1
 
