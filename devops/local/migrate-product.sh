@@ -1,3 +1,15 @@
+source ~/.bashrc
+nvm use v8.11.1
+echo node version is:
+node -v
+
+echo npm version is:
+npm -v
+
+echo pm2 version is:
+pm2 --version
+
+
 if [ "$project" == "" ]; then
   echo "Please enter project to run command for: "
   read project
@@ -48,14 +60,17 @@ export roomRoot=$remoteRoot/migration-room
 #   read -s password
 # fi
 
+
 if [ "$nobuild" != "true" ]; then
-  cd server
+  currentDir=$(pwd)
+  cd ../../server
+  pwd
   echo NODE_ENV=$env gulp build:dist
   NODE_ENV=$env gulp build:dist
   rm -rf ../dist
   mkdir ../dist
   mv dist/ ../dist/server/
-  cd ..
+  cd ${currentDir}
 fi
 
 ssh -p $sshport $user@$host "mkdir $remoteRoot & mkdir $roomRoot & mkdir $roomRoot/${env}-${project}"

@@ -1,3 +1,15 @@
+source ~/.bashrc
+nvm use v8.11.1
+echo node version is:
+node -v
+
+echo npm version is:
+npm -v
+
+echo pm2 version is:
+pm2 --version
+
+
 if [ "$project" == "" ]; then
   echo "Please enter project to run command for: "
   read project
